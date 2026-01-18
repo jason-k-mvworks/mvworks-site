@@ -33,19 +33,30 @@ body {
   line-height: 1.6;
 }
 
-/* Soft content separation on dark background */
+/* Frosted glass main content */
 main {
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(2px);
-  border-radius: 16px;
+  background: rgba(15, 15, 15, 0.55);
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.45);
+
+  padding: 2rem;
 }
+
 
 /* Mobile safety: disable fixed background */
 @media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
+  main {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
 }
+
 
 
 
