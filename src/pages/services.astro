@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
+---
+
+<BaseLayout title="Services | MVWorks">
+  <h1>Services</h1>
+  <p>
+    Specialist remote drafting and technical support for cabinet makers
+    using Microvellum.
+  </p>
+
+  <section>
+    <h2>Remote Microvellum Drafting</h2>
+    <ul>
+      <li>Shop drawings & manufacturing outputs</li>
+      <li>Cabinet libraries & product configuration</li>
+      <li>Plan, elevation & section generation</li>
+    </ul>
+    <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+      Book drafting time →
+    </a>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Standards Setup & Optimisation</h2>
+    <ul>
+      <li>Foundation Library setup</li>
+      <li>Prompting & formula optimisation</li>
+      <li>Drawing & output standardisation</li>
+    </ul>
+    <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+      Book a setup session →
+    </a>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Troubleshooting & Support</h2>
+    <ul>
+      <li>Product & draw issues</li>
+      <li>CNC output problems</li>
+      <li>Workflow & performance advice</li>
+    </ul>
+    <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+      Book support time →
+    </a>
+  </section>
+</BaseLayout>
