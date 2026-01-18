@@ -17,11 +17,11 @@ body {
 
   color: var(--color-text);
 
-  /* Background image */
+  /* Subtle global fixed background */
   background:
     linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
     ),
     url("/images/background.png");
 
@@ -32,6 +32,21 @@ body {
 
   line-height: 1.6;
 }
+
+/* Soft content separation on dark background */
+main {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+}
+
+/* Mobile safety: disable fixed background */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 
 
 h1,
