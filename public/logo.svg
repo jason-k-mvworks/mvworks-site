@@ -1,0 +1,34 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 210 48"
+  role="img"
+  aria-label="MVWorks"
+>
+  <title>MVWorks</title>
+
+  <!-- MV -->
+  <text
+    x="0"
+    y="34"
+    font-size="36"
+    font-weight="700"
+    letter-spacing="0.8"
+    fill="#1f3a5f"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif"
+  >
+    MV
+  </text>
+
+  <!-- Works (tightened, white) -->
+  <text
+    x="64"
+    y="34"
+    font-size="34"
+    font-weight="500"
+    letter-spacing="0.2"
+    fill="#ffffff"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif"
+  >
+    Works
+  </text>
+</svg>

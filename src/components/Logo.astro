@@ -1,14 +1,11 @@
 ---
-const { size = "1rem" } = Astro.props;
+const { width = 120 } = Astro.props;
 ---
 
-<span
-  style={`
-    font-size: ${size};
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    color: var(--color-accent);
-  `}
->
-  MV<span style="color: var(--color-text);">Works</span>
-</span>
+<img
+  src="/logo.svg"
+  alt="MVWorks"
+  width={width}
+  height="auto"
+  style="display:block;"
+/>
