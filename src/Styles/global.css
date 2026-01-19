@@ -21,7 +21,7 @@ body {
   /* Subtle global fixed background */
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("/images/background.png");
+    url("/images/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
