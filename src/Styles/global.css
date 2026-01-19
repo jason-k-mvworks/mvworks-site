@@ -20,12 +20,8 @@ body {
 
   /* Subtle global fixed background */
   background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.75)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("/images/background.png");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,35 +29,6 @@ body {
 
   line-height: 1.6;
 }
-
-/* Frosted glass main content shell */
-.main-shell {
-  max-width: 1000px;
-  margin: 3rem auto;
-  padding: 2rem;
-
-  background: rgba(10, 10, 10, 0.35);
-  backdrop-filter: blur(14px) saturate(130%);
-  -webkit-backdrop-filter: blur(14px) saturate(130%);
-
-  border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
-}
-
-
-/* Mobile safety: disable fixed background */
-@media (max-width: 768px) {
-  .main-shell {
-    margin: 1.5rem 1rem;
-    padding: 1.5rem;
-  }
-}
-
-
-
-
 
 h1,
 h2,
@@ -74,7 +41,7 @@ p {
 }
 
 a {
-  color: #9cc4ff;
+  color: var(--color-main);
   text-decoration: none;
   font-weight: 500;
 }
@@ -88,12 +55,91 @@ hr {
   border-top: 1px solid var(--color-border);
   margin: 2.5rem 0;
 }
+
+/* Frosted glass main content shell */
+.main-shell {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+
+  background: rgba(10, 10, 10, 0.35);
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+}
+
+/* CTA hover */
 .nav-cta:hover {
   background: var(--color-accent);
   color: #fff;
   text-decoration: none;
 }
-main {
-  background: #0c0c0c;
-  border-radius: 16px;
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Mobile safety: disable fixed background */
+  body {
+    font-size: 16px;
+    background-attachment: scroll;
+  }
+
+  /* Typography + spacing */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  ul {
+    padding-left: 1.1rem;
+  }
+
+  li {
+    margin: 0.4rem 0;
+  }
+
+  /* Main shell spacing */
+  .main-shell {
+    margin: 1.25rem 1rem;
+    padding: 1.5rem;
+    border-radius: 18px;
+  }
+
+  /* Step 2B: nav comfort + tap targets */
+  header nav {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  header nav a {
+    padding: 0.6rem 0.4rem;
+  }
+
+  .nav-cta {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: 14px;
+  }
+    /* Footer: stack neatly on mobile */
+  footer > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer a {
+    word-break: break-word;
+  }
 }
