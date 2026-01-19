@@ -4,6 +4,7 @@ import Logo from "../components/Logo.astro";
 
 const { title = "MVWorks" } = Astro.props;
 const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
+const emailLink = "jason.k@mvworks.com.au";
 ---
 
 <!doctype html>
@@ -37,7 +38,7 @@ const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
 
         <a
   class="nav-cta"
-  href={bookingUrl}
+  href={emailLink}
   target="_blank"
   rel="noopener noreferrer"
   style="
@@ -83,7 +84,7 @@ const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
         </div>
 
         <div>
-          <a href="mailto:jason.k@mvworks.com.au">
+          href={emailLink}
             jason.k@mvworks.com.au
           </a>
         </div>
