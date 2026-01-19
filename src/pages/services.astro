@@ -2,6 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
+
+const emailLink = "jason.k@mvworks.com.au";
 ---
 
 <BaseLayout title="Services | MVWorks">
@@ -14,12 +16,12 @@ const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
   <section>
     <h2>Remote Microvellum Drafting</h2>
     <ul>
-      <li>Shop drawings & manufacturing outputs</li>
-      <li>Cabinet libraries & product configuration</li>
-      <li>Plan, elevation & section generation</li>
+      <li>Client Presentation Drawings</li>
+      <li>Shop Drawings</li>
+      <li>Manufacturing Outputs</li>
     </ul>
-    <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
-      Book drafting time →
+    <a href={emailLink} target="_blank" rel="noopener noreferrer">
+      Request a Quote →
     </a>
   </section>
 
@@ -28,9 +30,9 @@ const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
   <section>
     <h2>Standards Setup & Optimisation</h2>
     <ul>
-      <li>Foundation Library setup</li>
-      <li>Prompting & formula optimisation</li>
-      <li>Drawing & output standardisation</li>
+      <li>Library Setups</li>
+      <li>Prompting & Formula Optimisation</li>
+      <li>Drawing & Output Standardisation</li>
     </ul>
     <a>
       Coming Soon →
@@ -40,14 +42,13 @@ const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
   <hr />
 
   <section>
-    <h2>Troubleshooting & Support</h2>
+    <h2>Troubleshooting</h2>
     <ul>
-      <li>Product & draw issues</li>
-      <li>CNC output problems</li>
-      <li>Workflow & performance advice</li>
+      <li>Product & Drafting Issues</li>
+      <li>Workflow & Performance Advice</li>
     </ul>
-    <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
-      Book support time →
+    <a>
+      Coming Soon →
     </a>
   </section>
 </BaseLayout>
