@@ -1,53 +1,65 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
-
-const emailLink = "jason.k@mvworks.com.au";
+const emailLink = "mailto:jason.k@mvworks.com.au";
 ---
 
 <BaseLayout title="Services | MVWorks">
-  <h1>Services</h1>
-  <p>
-    Specialist Remote Drafting using Microvellum.
-  </p>
-
   <section>
-    <h2>Remote Microvellum Drafting</h2>
-    <ul>
-      <li>Client Presentation Drawings</li>
-      <li>Shop Drawings</li>
-      <li>Manufacturing Outputs</li>
-    </ul>
-    <a href={emailLink} target="_blank" rel="noopener noreferrer">
-      Request a Quote →
-    </a>
+    <h1>Services</h1>
+    <p class="lead">
+      Specialist remote drafting and technical services using Microvellum,
+      focused on production-ready outcomes.
+    </p>
   </section>
 
-  <hr />
-
   <section>
-    <h2>Standards Setup & Optimisation</h2>
-    <ul>
-      <li>Library Setups</li>
-      <li>Prompting & Formula Optimisation</li>
-      <li>Drawing & Output Standardisation</li>
-    </ul>
-    <a>
-      Coming Soon →
-    </a>
-  </section>
+    <div class="service-card">
+      <h3>Remote Microvellum Drafting</h3>
+      <p>
+        End-to-end drafting support for joinery and cabinetry businesses,
+        delivered remotely and ready for manufacture.
+      </p>
+      <ul>
+        <li>Client presentation drawings</li>
+        <li>Shop drawings</li>
+        <li>CNC & manufacturing outputs</li>
+      </ul>
 
-  <hr />
+      <a href={emailLink}>Request a quote →</a>
+    </div>
 
-  <section>
-    <h2>Troubleshooting</h2>
-    <ul>
-      <li>Product & Drafting Issues</li>
-      <li>Workflow & Performance Advice</li>
-    </ul>
-    <a>
-      Coming Soon →
-    </a>
+    <div class="service-card">
+      <h3>Standards Setup & Optimisation</h3>
+      <p>
+        Improving consistency, speed, and reliability across your Microvellum
+        environment.
+      </p>
+      <ul>
+        <li>Library configuration</li>
+        <li>Prompting & formula optimisation</li>
+        <li>Drawing & output standardisation</li>
+      </ul>
+
+      <span style="color: var(--color-muted); font-size: 0.95rem;">
+        Coming soon
+      </span>
+    </div>
+
+    <div class="service-card">
+      <h3>Troubleshooting & Technical Support</h3>
+      <p>
+        Targeted assistance for drafting, product, and workflow issues that are
+        slowing your team down.
+      </p>
+      <ul>
+        <li>Product & drafting problem resolution</li>
+        <li>Workflow and performance advice</li>
+      </ul>
+
+      <span style="color: var(--color-muted); font-size: 0.95rem;">
+        Coming soon
+      </span>
+    </div>
   </section>
 </BaseLayout>
