@@ -75,6 +75,19 @@ hr {
   font-weight: 600;
   color: var(--color-text);
 }
+/* Brand text colouring */
+.brand-text {
+  font-weight: 600;
+}
+
+.brand-text .mv {
+  color: var(--color-main); /* light blue */
+}
+
+.brand-text .works {
+  color: #ffffff; /* white */
+}
+
 
 /* Frosted glass main content shell */
 .main-shell {
