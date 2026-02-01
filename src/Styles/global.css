@@ -56,6 +56,26 @@ hr {
   margin: 2.5rem 0;
 }
 
+/* Brand / logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.brand-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
 /* Frosted glass main content shell */
 .main-shell {
   max-width: 1000px;
@@ -133,7 +153,13 @@ hr {
     padding: 0.75rem 1rem;
     border-radius: 14px;
   }
-    /* Footer: stack neatly on mobile */
+
+  /* Brand logo sizing on mobile */
+  .brand-logo {
+    height: 24px;
+  }
+
+  /* Footer: stack neatly on mobile */
   footer > div {
     flex-direction: column;
     align-items: flex-start;
