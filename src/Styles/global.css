@@ -137,32 +137,35 @@ hr {
 /* Mobile */
 @media (max-width: 768px) {
   /* Mobile safety: disable fixed background */
+  /* Mobile typography – improved readability */
   body {
-    font-size: 16px;
-    background-attachment: scroll;
+    font-size: 17px;
   }
 
-  /* Typography + spacing */
+  p,
+  li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
   h1 {
-    font-size: 2rem;
-    margin-bottom: 0.6rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
   }
 
   h2 {
-    font-size: 1.4rem;
-    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
   }
 
-  p {
-    line-height: 1.75;
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 1.3rem;
   }
 
-  ul {
-    padding-left: 1.1rem;
-  }
-
-  li {
-    margin: 0.4rem 0;
+  .lead {
+    font-size: 1.2rem;
+    line-height: 1.85;
   }
 
   /* Main shell spacing + mobile glass tuning (less muddy) */
