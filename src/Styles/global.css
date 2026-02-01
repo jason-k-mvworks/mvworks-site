@@ -169,3 +169,14 @@ hr {
     word-break: break-word;
   }
 }
+/* Desktop: slightly larger brand logo */
+@media (min-width: 769px) {
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-text {
+    font-size: 1.25rem;
+  }
+}
