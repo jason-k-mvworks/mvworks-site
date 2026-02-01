@@ -3,19 +3,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="MVWorks – Microvellum Drafting Services">
-  <section style="margin-bottom:3rem;">
+  <section>
     <h1>MVWorks</h1>
-    <p>Microvellum Remote Drafting & Professional Services</p>
+    <p class="lead">Microvellum Remote Drafting & Professional Services</p>
   </section>
 
   <section>
     <h2>Services</h2>
-    <ul>
-      <li>Remote Microvellum Drafting</li>
-      <li>Remote Microvellum Professional Services (coming soon)</li>
-    </ul>
 
-    <p style="margin-top:1.5rem;">
+    <div class="service-card">
+      <strong>Remote Microvellum Drafting</strong>
+    </div>
+
+    <div class="service-card">
+      <strong>Remote Microvellum Professional Services</strong><br />
+      <span style="color: var(--color-muted);">(coming soon)</span>
+    </div>
+
+    <p style="margin-top: 1.25rem;">
       <a href="/services">View all services →</a>
     </p>
   </section>

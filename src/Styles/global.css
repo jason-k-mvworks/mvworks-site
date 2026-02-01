@@ -71,13 +71,9 @@ hr {
 }
 
 .brand-text {
+  font-weight: 600;
   font-size: 1.15rem;
-  font-weight: 600;
   color: var(--color-text);
-}
-/* Brand text colouring */
-.brand-text {
-  font-weight: 600;
 }
 
 .brand-text .mv {
@@ -87,7 +83,6 @@ hr {
 .brand-text .works {
   color: #ffffff; /* white */
 }
-
 
 /* Frosted glass main content shell */
 .main-shell {
@@ -103,6 +98,33 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+}
+
+/* Main-shell typography hierarchy */
+.main-shell h1 {
+  margin-top: 0;
+}
+
+.main-shell h2 {
+  margin-top: 2rem;
+}
+
+.main-shell ul {
+  margin-top: 0.75rem;
+}
+
+.main-shell .lead {
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}
+
+/* Service cards */
+.service-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 0.75rem 0;
 }
 
 /* CTA hover */
@@ -143,32 +165,45 @@ hr {
     margin: 0.4rem 0;
   }
 
-  /* Main shell spacing */
+  /* Main shell spacing + mobile glass tuning (less muddy) */
   .main-shell {
     margin: 1.25rem 1rem;
     padding: 1.5rem;
     border-radius: 18px;
+
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    background: rgba(10, 10, 10, 0.42);
   }
 
-  /* Step 2B: nav comfort + tap targets */
+  /* Header: better mobile layout */
   header nav {
     gap: 1rem;
     font-size: 1rem;
+    justify-content: space-between;
+  }
+
+  /* Brand takes a full row */
+  .brand {
+    width: 100%;
   }
 
   header nav a {
     padding: 0.6rem 0.4rem;
   }
 
+  /* CTA becomes a proper full-width button row */
   .nav-cta {
     width: 100%;
     text-align: center;
-    padding: 0.75rem 1rem;
+    margin-top: 0.25rem;
+    padding: 0.85rem 1rem;
     border-radius: 14px;
   }
 
   /* Brand logo sizing on mobile */
   .brand-logo {
+    width: 24px;
     height: 24px;
   }
 
@@ -182,6 +217,7 @@ hr {
     word-break: break-word;
   }
 }
+
 /* Desktop: slightly larger brand logo */
 @media (min-width: 769px) {
   .brand-logo {
