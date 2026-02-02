@@ -12,24 +12,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </p>
     </header>
 
-    <div class="form-wrap" aria-label="MVWorks Quote Request Form">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSetKdrzDrJmsXN_5gLWfMz26556DQ5xK_fi_dsZKrUSmNxSyQ/viewform?embedded=true"
-        title="MVWorks – Quote Request"
-        width="100%"
-        height="1600"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        loading="lazy"
-      >
-        Loading…
-      </iframe>
-    </div>
+    <section class="form-section" aria-label="MVWorks Quote Request Form">
+      <div class="form-wrap">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSetKdrzDrJmsXN_5gLWfMz26556DQ5xK_fi_dsZKrUSmNxSyQ/viewform?embedded=true"
+          width="100%"
+          height="1600"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          loading="lazy"
+          title="MVWorks Quote Request Form"
+        >
+          Loading…
+        </iframe>
+      </div>
 
-    <p class="support-note">
-      If you need to share drawings or files, submit the form first — we’ll reply with an upload option if required.
-    </p>
+      <p class="support-note">
+        If you have trouble uploading files, submit the form anyway and we’ll reply with an alternate upload option.
+      </p>
+    </section>
   </main>
 </BaseLayout>
 
@@ -50,23 +52,43 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     line-height: 1.5;
   }
 
+  .form-section {
+    margin-top: 1.5rem;
+  }
+
   .form-wrap {
-    margin: 1.25rem 0 1.25rem;
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.02);
   }
 
-  /* Helps reduce “double scroll” feeling if the iframe is tight */
-  iframe {
-    display: block;
-  }
-
+  /* If the form feels too tall/short, adjust the iframe height above (1600/1800/2000). */
   .support-note {
+    margin-top: 0.9rem;
     opacity: 0.85;
     font-size: 0.95rem;
     line-height: 1.45;
-    margin: 0;
   }
+
+  /* Optional: slightly tighter on mobile */
+  @media (max-width: 640px) {
+    .container {
+      padding: 1.5rem 0.9rem;
+    }
+  }
+  .form-wrap iframe {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .form-wrap iframe {
+    height: 2000px;
+  }
+}
+.form-section {
+  padding-bottom: 1.25rem;
+}
+
 </style>
