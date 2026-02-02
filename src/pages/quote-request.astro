@@ -53,6 +53,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     margin-top: 1.5rem;
   }
 
+.form-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.02)
+  );
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    0 20px 40px rgba(0,0,0,0.45);
+}
+
+
   /* If the form feels too tall/short, adjust the iframe height above (1600/1800/2000). */
   .support-note {
     margin-top: 0.9rem;
@@ -67,18 +81,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       padding: 1.5rem 0.9rem;
     }
   }
-  .form-wrap iframe {
+ .form-wrap iframe {
   display: block;
   width: 100%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .form-wrap iframe {
-    height: 2000px;
+    height: 2100px;
   }
 }
-.form-section {
-  padding-bottom: 1.25rem;
+.form-wrap iframe {
+  display: block;
+  width: 100%;
 }
+
+@media (max-width: 768px) {
+  .form-wrap iframe {
+    height: 2100px;
+  }
+}
+
 
 </style>
