@@ -13,12 +13,18 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
 
   color: var(--color-text);
 
-  /* Subtle global fixed background */
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("/images/background.webp");
@@ -29,6 +35,7 @@ body {
 
   line-height: 1.6;
 }
+
 
 h1,
 h2,
@@ -138,35 +145,37 @@ hr {
 @media (max-width: 768px) {
   /* Mobile safety: disable fixed background */
   /* Mobile typography – improved readability */
+    /* Mobile typography – enhanced readability */
   body {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   p,
   li {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1.15rem;
+    line-height: 1.85;
   }
 
   h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.8rem;
+    font-size: 2.3rem;
+    margin-bottom: 0.9rem;
   }
 
   h2 {
-    font-size: 1.6rem;
-    margin-top: 2rem;
+    font-size: 1.7rem;
+    margin-top: 2.1rem;
   }
 
   h3 {
-    font-size: 1.25rem;
-    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    margin-top: 1.4rem;
   }
 
   .lead {
-    font-size: 1.2rem;
-    line-height: 1.85;
+    font-size: 1.25rem;
+    line-height: 1.9;
   }
+
 
   /* Main shell spacing + mobile glass tuning (less muddy) */
   .main-shell {
