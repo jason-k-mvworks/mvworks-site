@@ -6,6 +6,8 @@ const { title = "MVWorks" } = Astro.props;
 const bookingUrl = "https://outlook.office.com/book/MVWorks1@mvworks.com.au/";
 const emailAddress = "jason.k@mvworks.com.au";
 const emailLink = `mailto:${emailAddress}`;
+const quoteUrl = "/quote-request";
+
 ---
 
 <!doctype html>
@@ -53,7 +55,7 @@ const emailLink = `mailto:${emailAddress}`;
 
         <a
           class="nav-cta"
-          href={emailLink}
+          href={quoteUrl}
           target="_blank"
           rel="noopener noreferrer"
           style="
